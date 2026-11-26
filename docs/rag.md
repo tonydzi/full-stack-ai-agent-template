@@ -116,7 +116,7 @@ CROSS_ENCODER_MODEL=...    # Model name (default: cross-encoder/ms-marco-MiniLM-
 
 ### Chunking Configuration
 
-Default settings in [`app/rag/config.py`](backend/app/rag/config.py):
+Default settings in [`app/services/rag/config.py`](https://github.com/vstorm-co/full-stack-ai-agent-template/blob/main/template/%7B%7Bcookiecutter.project_slug%7D%7D/backend/app/services/rag/config.py):
 
 ```python
 class RAGSettings(BaseModel):
@@ -293,7 +293,7 @@ RAG ingestion can be scheduled using background task workers:
 
 ### Task Configuration
 
-In [`app/worker/tasks/schedules.py`](backend/app/worker/tasks/schedules.py):
+In [`app/worker/tasks/schedules.py`](https://github.com/vstorm-co/full-stack-ai-agent-template/blob/main/template/%7B%7Bcookiecutter.project_slug%7D%7D/backend/app/worker/tasks/schedules.py):
 
 ```python
 @scheduler.scheduled("interval", hours=24)
@@ -326,7 +326,7 @@ python -m app.commands.rag list-collections
 
 ## Frontend Integration
 
-The frontend includes RAG API client at [`frontend/src/lib/rag-api.ts`](frontend/src/lib/rag-api.ts):
+The frontend includes RAG API client at [`frontend/src/lib/rag-api.ts`](https://github.com/vstorm-co/full-stack-ai-agent-template/blob/main/template/%7B%7Bcookiecutter.project_slug%7D%7D/frontend/src/lib/rag-api.ts):
 
 ```typescript
 import { ragApi } from '@/lib/rag-api';
